@@ -57,7 +57,7 @@ def search_reference(MBL):
     move_click(1335, 294)
     move_click(972, 594)
     move_click(909, 560)
-    move_click(1025, 584)
+    move_click(1025, 590)
 
     get_image_coords(resource_path("sidemar_images/sidemar_main_menu.png"),
                      "Cargando Referencia...")
@@ -187,5 +187,4 @@ def add_containers_info(containers_info, shippingcompany):
         pyautogui.press(['tab', 'enter'])
 
 if __name__ == "__main__":
-    print(f"{containers_info = }")
-    add_containers_info(containers_info, "MAEU")
+    search_reference(MBL)
